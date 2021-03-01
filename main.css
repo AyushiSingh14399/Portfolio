@@ -12,11 +12,11 @@ html{
 body{
     width: 100%;
     height: 100%;
-    background: url("images/sitebg.jpg");
+    background: url("images/sitebg.jpg") no-repeat center fixed;
     background-size: cover;
 }
 section{
-    padding: 6rem;
+    padding: 6rem 0;
 }
 a{
     text-decoration: none;
@@ -425,11 +425,55 @@ input[type="submit"]:hover{
 }
 /*End contact*/
 
-/*Start footer*/
-/*End footer*/
 
-/*Start animations*/
-/*End animations*/
 
 /*Start media queries*/
+
+@media screen and (max-width: 768px){
+    body{
+        background: url("images/sitebg2.jpg") no-repeat center fixed;
+        background-size: cover;
+    }
+    .landing-text h1{
+        font-size: 11rem;
+    }
+    .nav-list{
+        flex-direction: column;
+    }
+    li{
+        margin: 2rem 0;
+    }
+    .nav-link{
+        font-size: 4.5rem;
+    }
+    .about-heading h1{
+        font-size: 8rem;
+    }
+    .icon-container i{
+        font-size: 4rem;
+    }
+    .section-heading h1{
+        font-size: 3rem;
+    }
+    .about-details .nav-list{
+        flex-direction: initial;
+    }
+    .about-details li{
+        margin: 0 2rem;
+    }
+    .icon-container{
+        width: 7rem;
+        height: 7rem;
+    }
+    .timeline ul{
+        margin: 0 0 0 auto;
+    }
+    .timeline .date::before{
+        left: -20rem;
+    }
+    .timeline .date::after{
+        left: -5.9rem;
+    }
+}
+
 /*End media queries*/
